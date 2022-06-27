@@ -1,0 +1,4 @@
+.nav div:hover {
+    cursor: pointer;
+    background-color: #2cc5e0;
+}
