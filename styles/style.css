@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+    /*font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    /*font-family: 'Audiowide', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+}
+
+body, .workspace, .time, .horaAtual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.horaAtual {
+    margin-top: 50px;
+    width: 800px;
+    height: 200px;
+
+    font-size: 100px;
+    background-color: var(--timer-background);
+    border-radius: 80px;
+    font-family: 'Audiowide', sans-serif;
+}
