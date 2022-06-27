@@ -1,0 +1,13 @@
+@media(max-width: 650px) {
+    .nav {
+        height: 50vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav div {
+        width: 80%;
+        font-size: 4vw;
+    }
+}
