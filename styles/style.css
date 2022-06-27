@@ -25,11 +25,11 @@ body, .workspace, .time, .horaAtual {
 
 .horaAtual {
     margin-top: 50px;
-    width: 800px;
-    height: 200px;
+    width: 60vw;
+    height: 20vw;
 
-    font-size: 100px;
+    font-size: 8vw;
     background-color: var(--timer-background);
-    border-radius: 80px;
+    border-radius: 8vw;
     font-family: 'Audiowide', sans-serif;
 }
