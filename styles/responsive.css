@@ -10,4 +10,12 @@
         width: 80%;
         font-size: 4vw;
     }
+
+    .horaAtualNavSelected {
+        width: 60vw;
+        height: 20vw;
+    
+        font-size: 8vw;
+        border-radius: 8vw;
+    }
 }

@@ -1,4 +1,9 @@
 :root {
-    --timer-background: #00ecec;
+    --button-background: #00ecec;
     --background: #EDEDF6;
+    --background-selected: #b7b7b9;
+}
+
+:root {
+    --hover-button-background: #2cc5e0;
 }

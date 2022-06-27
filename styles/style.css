@@ -31,11 +31,12 @@ body, .workspace, .time, .horaAtual {
     height: 20vw;
 
     font-size: 8vw;
-    background-color: var(--timer-background);
+    background-color: var(--button-background);
     border-radius: 8vw;
     font-family: 'Audiowide', sans-serif;
-}
 
+    transition: all 0.2s linear;
+}
 
 /*   Navegação   */
 .nav {
@@ -59,5 +60,59 @@ body, .workspace, .time, .horaAtual {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    background-color: #47dbf5;
+    background-color: var(--button-background);
+}
+
+/*  box da navegação    */
+.box-function {
+    width: 90%;
+    height: 400px;
+    margin: 50px 0px;
+
+    border-radius: 40px;
+    background-color: var(--background-selected);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horaAtualNavSelected {
+    width: 40vw;
+    height: 10vw;
+
+    font-size: 4vw;
+    border-radius: 4vw;
+}
+
+.nav .buttonSelected {
+    background-color: var(--hover-button-background);
+}
+
+
+.box-function .cronometro {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.box-function .alarme {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(38, 0, 255);
+}
+
+.box-function .calculoDeTempo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 238, 0);
+}
+
+
+
+
+
+
+.none {
+    display: none;
 }

@@ -42,3 +42,14 @@ function formatarHoras(HH, MM, SS) {
     const formatTime = `${fHH}:${fMM}:${fSS}`;
     return formatTime;
 }
+
+function cronometroSelecionado() {
+    const horaAtualNavSelected = document.querySelector(".horaAtual");
+    horaAtualNavSelected.classList.toggle("horaAtualNavSelected");
+    const boxFunction = document.querySelector(".box-function");
+    boxFunction.classList.toggle("none")
+    const buttonSelected = document.querySelector(".nav .cronometro");
+    buttonSelected.classList.toggle("buttonSelected")
+    const info = document.querySelector(".box-function .cronometro");
+    info.classList.toggle("none");
+}
