@@ -34,3 +34,30 @@ body, .workspace, .time, .horaAtual {
     border-radius: 8vw;
     font-family: 'Audiowide', sans-serif;
 }
+
+
+/*   Navegação   */
+.nav {
+    margin-top: 50px;
+    width: 80vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav div{
+    width: 280px;
+    height: 80px;
+    margin: 8px;
+    padding: 8px;
+
+    border-radius: 9vw;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: #47dbf5;
+}
