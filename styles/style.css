@@ -23,6 +23,7 @@ body, .workspace, .time, .horaAtual {
     justify-content: center;
 }
 
+/*  Timer    */
 .horaAtual {
     margin-top: 50px;
     width: 60vw;
