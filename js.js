@@ -57,6 +57,20 @@ function cronometroSelecionado() {
     info.classList.remove("none");
 }
 
+function alarmeSelecionado() {
+    const horaAtualNavSelected = document.querySelector(".horaAtual");
+    const boxFunction = document.querySelector(".box-function");
+    const buttonSelected = document.querySelector(".nav .alarme");
+    const info = document.querySelector(".box-function .alarme");
+
+    conferirSelecao();
+
+    horaAtualNavSelected.classList.add("horaAtualNavSelected");
+    boxFunction.classList.remove("none");
+    buttonSelected.classList.add("buttonSelected");
+    info.classList.remove("none");
+}
+
 function conferirSelecao() {
     const info = document.querySelectorAll(".box-function div");
     const button = document.querySelectorAll(".nav div");
