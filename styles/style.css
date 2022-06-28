@@ -116,7 +116,7 @@ body, .workspace, .time, .horaAtual {
 
     font-weight: 700;
     border-radius: 19px;
-    background-color: aqua;
+    background-color: var(--button-background);
 
     display: flex;
     align-items: center;
