@@ -51,17 +51,24 @@ function cronometroSelecionado() {
 
     conferirSelecao();
 
-    horaAtualNavSelected.classList.toggle("horaAtualNavSelected");
-    boxFunction.classList.toggle("none");
-    buttonSelected.classList.toggle("buttonSelected");
-    info.classList.toggle("none");
+    horaAtualNavSelected.classList.add("horaAtualNavSelected");
+    boxFunction.classList.remove("none");
+    buttonSelected.classList.add("buttonSelected");
+    info.classList.remove("none");
 }
 
 function conferirSelecao() {
     const info = document.querySelectorAll(".box-function div");
-    for (let i = 0; i < info.length; i ++) {
-        if (info[i].classList.contains("none")) {
+    const button = document.querySelectorAll(".nav div");
+
+    let i = 0;
+    while (i < info.length) {
+        if (!info[i].classList.contains("none")) {
             info[i].classList.add("none");
         }
+        if (!button[i].classList.contains(".buttonSelected")) {
+            button[i].classList.remove("buttonSelected");
+        }
+        i++
     }
 }
