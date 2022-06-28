@@ -45,11 +45,23 @@ function formatarHoras(HH, MM, SS) {
 
 function cronometroSelecionado() {
     const horaAtualNavSelected = document.querySelector(".horaAtual");
-    horaAtualNavSelected.classList.toggle("horaAtualNavSelected");
     const boxFunction = document.querySelector(".box-function");
-    boxFunction.classList.toggle("none")
     const buttonSelected = document.querySelector(".nav .cronometro");
-    buttonSelected.classList.toggle("buttonSelected")
     const info = document.querySelector(".box-function .cronometro");
+
+    conferirSelecao();
+
+    horaAtualNavSelected.classList.toggle("horaAtualNavSelected");
+    boxFunction.classList.toggle("none");
+    buttonSelected.classList.toggle("buttonSelected");
     info.classList.toggle("none");
+}
+
+function conferirSelecao() {
+    const info = document.querySelectorAll(".box-function div");
+    for (let i = 0; i < info.length; i ++) {
+        if (info[i].classList.contains("none")) {
+            info[i].classList.add("none");
+        }
+    }
 }
