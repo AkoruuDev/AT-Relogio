@@ -85,6 +85,16 @@ function calculadoraDeTempoSelecionado() {
     info.classList.remove("none");
 }
 
+function sairDaAreaDeFuncoes() {
+    const horaAtualNavSelected = document.querySelector(".horaAtual");
+    const boxFunction = document.querySelector(".box-function");
+
+    conferirSelecao();
+
+    horaAtualNavSelected.classList.remove("horaAtualNavSelected");
+    boxFunction.classList.add("none");
+}
+
 function conferirSelecao() {
     const info = document.querySelectorAll(".box-function div");
     const button = document.querySelectorAll(".nav div");
