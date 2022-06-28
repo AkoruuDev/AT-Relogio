@@ -102,7 +102,7 @@ body, .workspace, .time, .horaAtual {
     background-color: rgb(38, 0, 255);
 }
 
-.box-function .calculoDeTempo {
+.box-function .calculadoraDeTempo {
     width: 100px;
     height: 100px;
     background-color: rgb(255, 238, 0);

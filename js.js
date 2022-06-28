@@ -71,6 +71,20 @@ function alarmeSelecionado() {
     info.classList.remove("none");
 }
 
+function calculadoraDeTempoSelecionado() {
+    const horaAtualNavSelected = document.querySelector(".horaAtual");
+    const boxFunction = document.querySelector(".box-function");
+    const buttonSelected = document.querySelector(".nav .calculadoraDeTempo");
+    const info = document.querySelector(".box-function .calculadoraDeTempo");
+
+    conferirSelecao();
+
+    horaAtualNavSelected.classList.add("horaAtualNavSelected");
+    boxFunction.classList.remove("none");
+    buttonSelected.classList.add("buttonSelected");
+    info.classList.remove("none");
+}
+
 function conferirSelecao() {
     const info = document.querySelectorAll(".box-function div");
     const button = document.querySelectorAll(".nav div");
