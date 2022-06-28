@@ -75,6 +75,8 @@ body, .workspace, .time, .horaAtual {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .horaAtualNavSelected {
@@ -106,6 +108,23 @@ body, .workspace, .time, .horaAtual {
     width: 100px;
     height: 100px;
     background-color: rgb(255, 238, 0);
+}
+
+.sair {
+    width: 100px;
+    height: 50px;
+
+    font-weight: 700;
+    border-radius: 19px;
+    background-color: aqua;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
 
 
